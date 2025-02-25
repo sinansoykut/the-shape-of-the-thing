@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>the shape of the thing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>the shape of the thing</h1>
+		<hr>
+      <br>
+    </header>
+    <div class="content">
+      <p>
+        <a href="pages/preface.html">preface</a>  |  <a href="pages/colophon.html">colophon</a>
+      </p>
+      <p>
+        <span class="inline-header">dogma</span> <br>
+        <a href="pages/the_articles_of_faith/the_articles_of_faith.html">the articles of faith</a>
+      </p>
+      <p>
+        <span class="inline-header">wrong worship</span> <br>
+        <a href="pages/mars/mars.html">mars</a>  |  <a href="pages/moloch/moloch.html">moloch</a>  |  <a href="pages/mammon/mammon.html">mammon</a>  |  <a href="pages/mara/mara.html">mara</a>
+      </p>
+      <p>
+        <span class="inline-header">the one true god</span> <br>
+        <a href="pages/hatred/hatred.html">hatred</a>  |  <a href="pages/the_turn/the_turn.html">the turn</a>  |  <a href="pages/love/love.html">love</a>
+      </p>
+      <p>
+        <span class="inline-header">right worship</span> <br>
+        <a href="pages/the_redeeming/the_redeeming.html">the redeeming</a>
+      </p>
+      <p>
+        <span class="inline-header">acts</span> <br>
+        <a href="pages/the_way_from_here/the_way_from_here.html">the way from here</a>
+      </p>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()">
+    </footer>
+  </div>
+  
+  <script src="darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+  </script>
+</body>
+</html>
+

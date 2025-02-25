@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>manhood is conferred</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 3em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="mars.html">mars</a></h1>
+		<hr>
+        <h2>manhood is conferred</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+be a man they say
+with everything implicit
+the esteem of other men
+is the thing that we solicit
+
+it's our performance
+and the acts we display
+this ain't anything other
+than gendered roleplay
+
+it is men
+we're the deciders
+on who's raised up
+we're the dividers
+
+you wear the mask
+you play the part
+craft a facade
+silence your heart
+
+and as you perform the role you're given
+mimicking men and myth and might
+the mistakes you make are unforgiven
+your social crimes mark you as slight
+
+it's our gaze that decides
+as you're measured and assessed
+it's our game that provides
+the unending test
+
+the acceptance we strive for
+is a fickle thing
+we're always at risk
+of being made second string
+
+it cannot be held
+there's no way to be done
+the mask that you make
+will become someone
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

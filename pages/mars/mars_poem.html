@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mars</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 5em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="mars.html">mars</a></h1>
+		<hr>
+        <h2>mars</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+the bespoke god of man we've made
+goes by the name of mars
+and his consuming hunger 
+demands offerings of ours
+
+mars the god of man
+of virility and war
+mars who does demand
+that an oath to him be swore
+
+the patriarch
+and the provider
+our warlord king
+who does preside here
+
+mars who plays pretend
+to a platonic form
+but who is created
+as we offer up our norms
+
+only a god in so far
+as he's got us believing
+there's one way to appear
+to be seen as achieving
+
+his power is made
+in the social domain
+as we tithe to him
+our care and our pain
+
+men enter to his congregation
+with selfish acts of mutilation
+of those who kneel, and those who resist
+we break on the wheel, or simply desist
+
+this old man has had his time
+and now his time is done
+he's ours to grant or to decline
+to make into someone
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

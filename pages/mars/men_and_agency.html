@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>men and agency</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 4em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="mars.html">mars</a></h1>
+		<hr>
+        <h2>men and agency</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+sexual assault
+is a pervasive problem here
+with mental somersaults
+we ask was the clothing sheer?
+
+"I couldn't help myself
+did you see how she was dressed?
+if women leave the house like that
+they deserve the rest"
+
+men are not simple automata
+operating by instinct
+we have agency to act and choose
+what we think and do are linked
+
+a rapist rapes because
+they do not see another person
+not because of hormones
+but because of their perversion
+
+casting men as predators
+slavering over prey
+sets tone for what's acceptable
+and leads us to downplay
+
+if we excuse the acts of men
+as biologically compelled
+we teach women that from us
+trust must be withheld
+
+under such a system
+it cannot be asked
+"why are women so choosy
+why are men typecast?"
+
+to be a male victim
+within a place as this
+is to be party to
+the women we dismiss
+
+our worship of power
+paints victims as faulted
+but it's shameful to assault
+not to be assaulted
+
+men are human people
+with normal human volition
+if we are denied this
+we'll behave without contrition
+
+we're regular people
+we do as we decide
+in your autonomy
+please have some pride
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

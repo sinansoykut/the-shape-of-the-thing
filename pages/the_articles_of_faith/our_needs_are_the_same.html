@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>our needs are the same</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 5em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="the_articles_of_faith.html">the articles of faith</a></h1>
+		<hr>
+        <h2>our needs are the same</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+regardless of age, gender, race, or class,
+all human people share the same set of needs
+
+men do not need more competence or autonomy than women,
+women do not need more emotional capacity or connectedness than men
+
+we are all labouring after the same needs,
+safety, connection, autonomy, growth
+
+while we are confined to our own direct experience,
+the joys and sorrow of others are analogous reflections of our own
+
+everyone out here is reaching for the same thing,
+we have unity of purpose, even as we divide ourselves
+
+we are here together, let us act together
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

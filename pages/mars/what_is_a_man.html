@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>what is a man?</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 5em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="mars.html">mars</a></h1>
+		<hr>
+        <h2>what is a man?</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+what is a man, what makes him so
+who gets respect that we bestow?
+
+what are the borders and their ends
+how are we classifying men?
+with these people and in this place
+a man is a specific case
+
+not a human person
+with a set of human needs
+not a thing of love
+but a thing of acts and deeds 
+
+man is a set of expectations
+we receive as patrimony
+an image and an accusation
+the obligation is boloney
+
+manhood is not granted
+by your rights of birth
+it's the pressures planted
+suggestions of your worth
+
+the measure by which you pass or fail
+perform or be prejudged
+act in the play, or be excluded
+no middle way is trudged
+
+manhood is conferred
+by the respect of other men
+and it must be reasserted
+again and again
+
+to be a man, and to be granted
+the privileges allotted
+participate as if it were
+injustice was unspotted
+
+what is a man, what makes us so?
+the simple display of a man-show
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

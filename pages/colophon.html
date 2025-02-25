@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>colophon</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 3em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="../index.html">the shape of the thing</a></h1>
+		<hr>
+        <h2>colophon</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+I bear no credentials
+and present no works
+I am the thing
+in the alley that lurks
+
+my words will make sense
+or they will not
+they're yours to hear
+to hold in thought
+
+this back-flap tripe
+is a way to be known
+from this I'm precluded
+a statue in stone
+
+I have a family
+and was born in a place
+but of who I am
+there's only blank space
+
+I ain't listen to music
+or fuck with hobbies
+that's just human nonsense
+for people with bodies
+
+I am one of the wretches
+haunting around
+body without soul
+soul without sound
+
+if you want to connect
+fucking talk to your friends
+I ain't here to be seen
+but to offer a lens
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../light.png";
+      } else {
+        toggleImg.src = "../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

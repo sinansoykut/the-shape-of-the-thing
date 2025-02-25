@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>preface</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 5em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="../index.html">the shape of the thing</a></h1>
+		<hr>
+        <h2>preface</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+so what, why, and wherefore
+poems written to restore
+these were set down to elucidate
+the cage around we see as fate
+
+to explain to you
+what's plain to me
+to take my truths
+and set them free
+
+that we create our gods as culture
+and understand them as immutable
+that while we worship, they endure
+but in our remaking they're refutable
+
+it's purpose is a heresy
+of our corrupted pantheon
+that we remake with clarity
+and usher here the light of dawn
+
+this was written for those who can read
+for those with hearts that weep and bleed
+bound together with silver string
+this was written for all who sing
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../light.png";
+      } else {
+        toggleImg.src = "../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

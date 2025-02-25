@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>what we allot to men</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 3em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="mars.html">mars</a></h1>
+		<hr>
+        <h2>what we allot to men</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+this is what's allotted
+for men who seek to pass
+the traits and expectations
+granted to our class
+
+women are not granted these
+but live them all the same
+allowed our affectations
+long as they play the game
+
+strength is the essential thing
+set before the rest
+next your independence
+by which you're self-possessed
+
+assertive of yourself
+up to and past aggression
+ours is not to make
+even minor concessions
+
+sexual appetite 
+is the connectedness allowed
+though it's more a numbers game 
+of which you can be proud
+
+be stoic in your temperament
+ignore any pains
+do not dwell on what you feel
+focus on your gains
+
+granted rationality
+and distance from emotion
+it's to our absent god we pray
+with anger as devotion
+
+leadership is ours
+and so is to provide
+a holdover from times
+when women were denied
+
+all those other things
+that a human person feels
+you're not granted these
+so deny your own appeals
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+

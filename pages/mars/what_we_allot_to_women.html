@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>what we allot to women</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    pre {
+      text-align: left; /* Override centering for pre content */
+      margin-left: 2em; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="mars.html">mars</a></h1>
+		<hr>
+        <h2>what we allot to women</h2>
+      <br>
+    </header>
+    <div class="content">
+      <pre>
+the times they are a changing
+as women change their lot
+and with much rearranging
+some freedoms have been wrought
+
+what we permit to women
+we make shameful to men
+if you will embody these
+you'll be judged feminine
+
+women are our nurturers
+this is what we expect
+to provide us care and comfort
+and to genuflect
+
+have empathy and deference
+is what they are told
+be the bigger person
+even when you're getting sold
+
+regarding chastity
+this is a made up standard
+and so women having sex
+does not make them slandered
+
+granted sensitivity
+to show weakness when you're weak
+to be as soft as you feel
+without hearing critique
+
+emotional expression
+to speak the thing your feeling
+though it's cast as weakness
+at least you're not concealing
+
+submission and support
+the roles women are taught
+binary division
+is what creates our gender knot
+
+and so the lines are drawn
+our experiences preordained
+but we each have agency
+so live it unconstrained
+      </pre>
+    </div>
+    <footer>
+      <a href="https://www.tiktok.com/@empathycast" target="_blank">
+        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/empathycast" target="_blank">
+        <img src="../../instagram.png" alt="instagram" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <br>
+      <br>
+      <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+    </footer>
+  </div>
+  
+  <script src="../../darkmode.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleImg = document.querySelector('.toggle-img');
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        toggleImg.src = "../../light.png";
+        localStorage.setItem("dark-mode", "true");
+      } else {
+        toggleImg.src = "../../dark.png";
+        localStorage.setItem("dark-mode", "false");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleImg = document.querySelector('#darkModeToggle');
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        toggleImg.src = "../../light.png";
+      } else {
+        toggleImg.src = "../../dark.png";
+      }
+    });
+  </script>
+</body>
+</html>
+
