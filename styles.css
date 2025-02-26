@@ -7,7 +7,6 @@ html, body {
 }
 body {
   font-family: monospace;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Flex container for the entire page */
@@ -114,7 +113,7 @@ a {
   }
 
   footer {
-    //flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 40px; /* More space between icons */
   }
 
