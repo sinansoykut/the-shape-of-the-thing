@@ -110,6 +110,10 @@ a {
     margin-top: 2em;
   }
 
+  html, body {
+  overflow-x: hidden; /* Prevents entire page from shifting */
+  }
+
   body {
     font-size: 2.5em;
     display: flex;
@@ -127,8 +131,16 @@ a {
     gap: 80px; /* More space between icons */
   }
 
+  pre {
+    font-size: calc(0.5em + 1vw);
+    max-width: 90vw; /* Prevents text from extending too far */
+    text-align: left; /* Ensures left alignment */
+  }
+
   .content {
-    width: 100%;
+    max-width: 95vw; /* Keeps content centered */
+    text-align: center;
+    margin: auto;
     padding: 1em;
   }
 
