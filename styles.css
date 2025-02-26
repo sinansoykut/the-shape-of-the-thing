@@ -44,6 +44,16 @@ header h2 {
   width: 100%;
 }
 
+.poem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  text-align: left;
+  width: 100%;
+}
+
 footer {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
@@ -115,7 +125,7 @@ a {
   }
 
   body {
-    font-size: 2.5em;
+    font-size: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,14 +141,7 @@ a {
     gap: 80px; /* More space between icons */
   }
 
-  pre {
-    font-size: calc(0.5em + 1vw);
-    max-width: 90vw; /* Prevents text from extending too far */
-    text-align: left; /* Ensures left alignment */
-  }
-
   .content {
-    max-width: 95vw; /* Keeps content centered */
     text-align: center;
     margin: auto;
     padding: 1em;
