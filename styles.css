@@ -99,14 +99,19 @@ a {
   text-decoration: none;
 }
 
+.no-wrap {
+  white-space: nowrap; /* Prevents text from breaking into a new line */
+}
+
 /* enlarge for mobile screens */
 @media (pointer: coarse) {
   header {
-    font-size: 2em;
+    font-size: 1em;
+    margin-top: 2em;
   }
 
   body {
-    font-size: 1em;
+    font-size: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,23 +119,21 @@ a {
   }
   
   img, .social-icon, .toggle-img {
-    transform: scale(2);
+    transform: scale(3);
   }
 
   footer {
     flex-wrap: wrap;
-    gap: 40px; /* More space between icons */
+    gap: 80px; /* More space between icons */
   }
 
   .content {
     width: 100%;
-    max-width: 90%; /* Ensures it doesn't stretch too much */
     padding: 1em;
-    transform: scale(2);
   }
 
   .social-icons {
-    gap: 45px; /* Increase spacing between icons on mobile */
+    gap: 85px; /* Increase spacing between icons on mobile */
   }
 }
 
