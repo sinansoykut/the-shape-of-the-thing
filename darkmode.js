@@ -1,16 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the dark mode toggle image element if it exists
-  const toggleImg = document.querySelector('.toggle-img');
-  
-  // Check the stored value and apply dark mode if needed
-  if (localStorage.getItem("dark-mode") === "true") {
-    document.body.classList.add("dark-mode");
-    if (toggleImg) {
-      toggleImg.src = "light.png";
+function applyDarkModePreference() {
+    const body = document.body;
+    const toggleImg = document.querySelector('.toggle-img');
+    
+    if (localStorage.getItem("dark-mode") === "true") {
+        body.classList.add("dark-mode");
+        toggleImg.src = toggleImg.src.replace("dark.png", "light.png");
+    } else {
+        body.classList.remove("dark-mode");
+        toggleImg.src = toggleImg.src.replace("light.png", "dark.png");
     }
-  } else {
-    if (toggleImg) {
-      toggleImg.src = "dark.png";
+}
+
+function toggleDarkMode() {
+    const body = document.body;
+    const toggleImg = document.querySelector('.toggle-img');
+
+    if (body.classList.contains("dark-mode")) {
+        body.classList.remove("dark-mode");
+        localStorage.setItem("dark-mode", "false");
+        toggleImg.src = toggleImg.src.replace("light.png", "dark.png");
+    } else {
+        body.classList.add("dark-mode");
+        localStorage.setItem("dark-mode", "true");
+        toggleImg.src = toggleImg.src.replace("dark.png", "light.png");
     }
-  }
-});
+}
+
+// Ensure dark mode preference is applied when the page loads
+document.addEventListener("DOMContentLoaded", applyDarkModePreference);
+
+// Ensure the latest dark mode choice is applied even when using the back button
+window.addEventListener("pageshow", applyDarkModePreference);

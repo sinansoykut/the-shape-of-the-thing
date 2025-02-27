@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\pages"
+    "\\pages",
+    "\\pages\\mars",
+    "\\pages\\the_articles_of_faith"
   ],
-  "SelectedNode": "\\pages\\mars",
+  "SelectedNode": "\\pages\\preface.html",
   "PreviewInSolutionExplorer": false
 }
