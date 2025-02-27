@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\styles.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\pages\\the_articles_of_faith\\the_one_true_good.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\the_articles_of_faith\\the_one_true_good.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\pages\\preface.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pages\\preface.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\styles.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,64 +18,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAoAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-25T16:26:04.94Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\styles.css",
               "RelativeDocumentMoniker": "styles.css",
               "ToolTip": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\styles.css",
               "RelativeToolTip": "styles.css",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGUAAAAMAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAIMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-26T17:05:55.049Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "preface.html",
-              "DocumentMoniker": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\pages\\preface.html",
-              "RelativeDocumentMoniker": "pages\\preface.html",
-              "ToolTip": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\pages\\preface.html",
-              "RelativeToolTip": "pages\\preface.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-26T21:12:12.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "the_one_true_good.html",
-              "DocumentMoniker": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\pages\\the_articles_of_faith\\the_one_true_good.html",
-              "RelativeDocumentMoniker": "pages\\the_articles_of_faith\\the_one_true_good.html",
-              "ToolTip": "C:\\Users\\sinan\\Google Drive\\life\\the shape of the thing\\pages\\the_articles_of_faith\\the_one_true_good.html",
-              "RelativeToolTip": "pages\\the_articles_of_faith\\the_one_true_good.html",
-              "ViewState": "AQIAACAAAAAAAAAAAAAUwDsAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-26T17:11:19.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
