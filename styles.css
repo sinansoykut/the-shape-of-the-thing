@@ -56,7 +56,6 @@ footer {
     align-items: center;
     text-align: center;
     padding: 1em 0;
-    gap: 15px;
 }
 .social-icons {
     display: flex;
@@ -101,7 +100,6 @@ footer {
 @media (pointer: coarse) {
     header {
         font-size: 2em;
-        margin-top: 2em;
     }
     img, .social-icon, .toggle-img {
         transform: scale(3);
@@ -128,10 +126,10 @@ footer {
     }
 
     .poem {
-        font-size: 2em !important;
-        line-height: 1.5;
+        font-size: 2em;
+        line-height: 1.2;
         width: 90%;
-        max-width: 600px; 
+        max-width: 700px; 
         text-align: left;
         margin: auto;
     }
