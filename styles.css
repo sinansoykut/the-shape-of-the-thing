@@ -9,6 +9,7 @@
     padding: 2em 0;
     overflow: auto;
 }
+/* take up the whole page */
 html, body {
     height: 100%;
     margin: 0;
