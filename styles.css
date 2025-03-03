@@ -79,6 +79,10 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.home-icon {
+    width: 32px;
+    height: auto;
+}
 .toggle-img {
     width: 32px;
     height: auto;
@@ -110,7 +114,7 @@ footer {
     header {
         font-size: 2em;
     }
-    img, .social-icon, .toggle-img {
+    img, .social-icon, .home-icon, .toggle-img {
         transform: scale(3);
     }
     footer {
@@ -125,6 +129,11 @@ footer {
     .social-icons a {
         display: inline-block;
     }
+    .dark-mode-container {
+    display: flex; 
+    gap: 90px; 
+    justify-content: center;
+}
 
     .content {
         flex: 1;
