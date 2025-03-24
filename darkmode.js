@@ -4,10 +4,10 @@ function applyDarkModePreference() {
     
     if (localStorage.getItem("dark-mode") === "true") {
         body.classList.add("dark-mode");
-        toggleImg.src = toggleImg.src.replace("dark.png", "light.png");
+        toggleImg.src = toggleImg.src.replace("images/dark.png", "images/light.png");
     } else {
         body.classList.remove("dark-mode");
-        toggleImg.src = toggleImg.src.replace("light.png", "dark.png");
+        toggleImg.src = toggleImg.src.replace("images/light.png", "images/dark.png");
     }
 }
 
@@ -18,11 +18,11 @@ function toggleDarkMode() {
     if (body.classList.contains("dark-mode")) {
         body.classList.remove("dark-mode");
         localStorage.setItem("dark-mode", "false");
-        toggleImg.src = toggleImg.src.replace("light.png", "dark.png");
+        toggleImg.src = toggleImg.src.replace("images/light.png", "images/dark.png");
     } else {
         body.classList.add("dark-mode");
         localStorage.setItem("dark-mode", "true");
-        toggleImg.src = toggleImg.src.replace("dark.png", "light.png");
+        toggleImg.src = toggleImg.src.replace("images/dark.png", "images/light.png");
     }
 }
 

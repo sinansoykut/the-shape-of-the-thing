@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>mammon</title>
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../images/favicon.ico" sizes="any">
+  <link rel="shortcut icon" href="../../images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
+  <meta property="og:image" content="../../images/favicon-512x512.png">
 </head>
 <body>
   <div class="container">
@@ -59,20 +64,20 @@
     <footer>
     <div class="social-icons">
       <a href="https://www.tiktok.com/@empathycast" target="_blank">
-        <img src="../../tiktok.png" alt="tiktok" class="social-icon">
+        <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
       </a>
       <a href="https://www.instagram.com/empathycast" target="_blank">
-        <img src="../../instagram.png" alt="instagram" class="social-icon">
+        <img src="../../images/instagram.png" alt="instagram" class="social-icon">
       </a>
       <a href="https://www.youtube.com/channel/empathycast" target="_blank">
-        <img src="../../youtube.png" alt="YouTube" class="social-icon">
+        <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
       </a>
       </div>
       <div class="dark-mode-container">
         <a href="../../index.html">
-            <img src="../../home.png" alt="home" class="home-icon">
+            <img src="../../images/home.png" alt="home" class="home-icon">
         </a>
-        <img src="../../dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+        <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
       </div>
     </footer>
   </div>
@@ -85,10 +90,10 @@
       body.classList.toggle('dark-mode');
       
       if (body.classList.contains('dark-mode')) {
-        toggleImg.src = "../../light.png";
+        toggleImg.src = "../../images/light.png";
         localStorage.setItem("dark-mode", "true");
       } else {
-        toggleImg.src = "../../dark.png";
+        toggleImg.src = "../../images/dark.png";
         localStorage.setItem("dark-mode", "false");
       }
     }
@@ -97,9 +102,9 @@
       const toggleImg = document.querySelector('#darkModeToggle');
       if (localStorage.getItem("dark-mode") === "true") {
         document.body.classList.add("dark-mode");
-        toggleImg.src = "../../light.png";
+        toggleImg.src = "../../images/light.png";
       } else {
-        toggleImg.src = "../../dark.png";
+        toggleImg.src = "../../images/dark.png";
       }
     });
   </script>
