@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>the monster and the silence</title>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="icon" href="../images/favicon.ico" sizes="any">
-  <link rel="shortcut icon" href="../images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png">
-  <meta property="og:image" content="../images/favicon-512x512.png">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../images/favicon.ico" sizes="any">
+  <link rel="shortcut icon" href="../../images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
+  <meta property="og:image" content="../../images/favicon-512x512.png">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1><a href="../index.html">the shape of the thing</a></h1>
+      <h1><a href="../../index.html">the shape of the thing</a></h1>
 		<hr>
         <h2>the monster and the silence</h2>
       <br>
@@ -54,25 +54,25 @@
     <footer>
     <div class="social-icons">
       <a href="https://www.tiktok.com/@empathycast" target="_blank">
-        <img src="../images/tiktok.png" alt="tiktok" class="social-icon">
+        <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
       </a>
       <a href="https://www.instagram.com/empathycast" target="_blank">
-        <img src="../images/instagram.png" alt="instagram" class="social-icon">
+        <img src="../../images/instagram.png" alt="instagram" class="social-icon">
       </a>
       <a href="https://www.youtube.com/channel/empathycast" target="_blank">
-        <img src="../images/youtube.png" alt="YouTube" class="social-icon">
+        <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
       </a>
     </div>
     <div class="dark-mode-container">
-        <a href="../index.html">
-            <img src="../images/home.png" alt="home" class="home-icon">
+        <a href="../../index.html">
+            <img src="../../images/home.png" alt="home" class="home-icon">
         </a>
-        <img src="../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+        <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
     </div>
     </footer>
   </div>
   
-  <script src="../darkmode.js"></script>
+  <script src="../../darkmode.js"></script>
   <script>
     function toggleDarkMode() {
       const body = document.body;
@@ -80,10 +80,10 @@
       body.classList.toggle('dark-mode');
       
       if (body.classList.contains('dark-mode')) {
-        toggleImg.src = "../images/light.png";
+        toggleImg.src = "../../images/light.png";
         localStorage.setItem("dark-mode", "true");
       } else {
-        toggleImg.src = "../images/dark.png";
+        toggleImg.src = "../../images/dark.png";
         localStorage.setItem("dark-mode", "false");
       }
     }
@@ -92,9 +92,9 @@
       const toggleImg = document.querySelector('#darkModeToggle');
       if (localStorage.getItem("dark-mode") === "true") {
         document.body.classList.add("dark-mode");
-        toggleImg.src = "../images/light.png";
+        toggleImg.src = "../../images/light.png";
       } else {
-        toggleImg.src = "../images/dark.png";
+        toggleImg.src = "../../images/dark.png";
       }
     });
   </script>
