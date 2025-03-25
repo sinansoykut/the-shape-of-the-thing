@@ -35,6 +35,26 @@ a {
     white-space: nowrap;
 }
 
+/* Wraps the side images and content */
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12em;
+  max-width: 800px;
+}
+
+/* Side skeleton image */
+.side-image {
+  height: 600px;
+  object-fit: contain;
+}
+
+/* Flip right image horizontally */
+.flip {
+  transform: scaleX(-1);
+}
+
 /* Header styling */
 header {
     text-align: center;
@@ -132,6 +152,16 @@ footer {
     }
     .dark-mode-container {
         gap: 90px; 
+    }
+
+    .content-wrap {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .side-image {
+      display: none;
     }
 
     .content {
