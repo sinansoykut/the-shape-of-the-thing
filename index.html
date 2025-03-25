@@ -98,21 +98,6 @@
 	</div>
 
 	<script src="darkmode.js"></script>
-	<script>
-		function toggleDarkMode() {
-			const body = document.body;
-			const toggleImg = document.querySelector('.toggle-img');
-			body.classList.toggle('dark-mode');
-	  
-			if (body.classList.contains('dark-mode')) {
-				toggleImg.src = "images/light.png";
-				localStorage.setItem("dark-mode", "true");
-			} else {
-				toggleImg.src = "images/dark.png";
-				localStorage.setItem("dark-mode", "false");
-			}
-		}
-	</script>
 </body>
 </html>
 
