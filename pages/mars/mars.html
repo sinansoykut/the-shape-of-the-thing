@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>mars</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="icon" href="../../images/favicon.ico" sizes="any">
-  <link rel="shortcut icon" href="../../images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
-  <meta property="og:image" content="../../images/favicon-512x512.png">
+   <meta charset="UTF-8">
+   <title>mars</title>
+   <link rel="stylesheet" href="../../styles.css">
+   <link rel="icon" href="../../images/favicon.ico" sizes="any">
+   <link rel="shortcut icon" href="../../images/favicon.ico">
+   <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
+   <meta property="og:image" content="../../images/favicon-512x512.png">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1><a href="../../index.html">the shape of the thing</a></h1>
-		<hr>
-        <h2>mars</h2>
-      <br>
-    </header>
-    <div class="content">
-        <p><a href="mars_poem.html">mars</a></p>
-        <p><a href="what_is_a_man.html">what is a man?</a></p>
-        <p><a href="men_are_made.html">men are made</a></p>
-        <p><a href="coming_of_age.html">coming of age</a></p>
-        <p><a href="manhood_is_conferred.html">manhood is conferred</a></p>
-        <p><a href="the_arbiters_of_men.html">the arbiters of men</a></p>
-        <p><a href="what_we_allot_to_men.html">what we allot to men</a></p>
-        <p><a href="what_we_allot_to_women.html">what we allot to women</a></p>
-        <p><a href="men_and_agency.html">men and agency</a></p>
-        <p><a href="the_gravity_of_gender.html">the gravity of gender</a></p>
-        <p><a href="the_masculinity_game.html">the masculinity game</a></p>
-    </div>
-    <footer>
-    <div class="social-icons">
-      <a href="https://www.tiktok.com/@empathycast" target="_blank">
-        <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
-      </a>
-      <a href="https://www.instagram.com/empathycast" target="_blank">
-        <img src="../../images/instagram.png" alt="instagram" class="social-icon">
-      </a>
-      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
-        <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
-      </a>
-      </div>
-      <div class="dark-mode-container">
-        <a href="../../index.html">
-            <img src="../../images/home.png" alt="home" class="home-icon">
-        </a>
-        <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
-      </div>
-    </footer>
-  </div>
-  
-  <script src="../../darkmode.js"></script>
-  <script>
-    function toggleDarkMode() {
-      const body = document.body;
-      const toggleImg = document.querySelector('.toggle-img');
-      body.classList.toggle('dark-mode');
-      
-      if (body.classList.contains('dark-mode')) {
-        toggleImg.src = "../../images/light.png";
-        localStorage.setItem("dark-mode", "true");
-      } else {
-        toggleImg.src = "../../images/dark.png";
-        localStorage.setItem("dark-mode", "false");
-      }
-    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleImg = document.querySelector('#darkModeToggle');
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-        toggleImg.src = "../../images/light.png";
-      } else {
-        toggleImg.src = "../../images/dark.png";
+<body>
+   <div class="container">
+      <header>
+      <h1><a href="../../index.html">the shape of the thing</a></h1>
+	   <hr>
+         <h2>mars</h2>
+      <br>
+      </header>
+
+      <div class="content">
+         <p><a href="mars_poem.html">mars</a></p>
+         <p><a href="what_is_a_man.html">what is a man?</a></p>
+         <p><a href="men_are_made.html">men are made</a></p>
+         <p><a href="coming_of_age.html">coming of age</a></p>
+         <p><a href="manhood_is_conferred.html">manhood is conferred</a></p>
+         <p><a href="the_arbiters_of_men.html">the arbiters of men</a></p>
+         <p><a href="what_we_allot_to_men.html">what we allot to men</a></p>
+         <p><a href="what_we_allot_to_women.html">what we allot to women</a></p>
+         <p><a href="men_and_agency.html">men and agency</a></p>
+         <p><a href="the_gravity_of_gender.html">the gravity of gender</a></p>
+         <p><a href="the_masculinity_game.html">the masculinity game</a></p>
+      </div>
+
+      <footer>
+         <div class="social-icons">
+            <a href="https://www.tiktok.com/@empathycast" target="_blank">
+               <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/empathycast" target="_blank">
+               <img src="../../images/instagram.png" alt="instagram" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+               <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
+            </a>
+         </div>
+         <div class="dark-mode-container">
+            <a href="../../index.html">
+               <img src="../../images/home.png" alt="home" class="home-icon">
+            </a>
+            <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+         </div>
+      </footer>
+   </div>
+  
+   <script src="../../darkmode.js"></script>
+   <script>
+      function toggleDarkMode() {
+         const body = document.body;
+         const toggleImg = document.querySelector('.toggle-img');
+         body.classList.toggle('dark-mode');
+      
+         if (body.classList.contains('dark-mode')) {
+            toggleImg.src = "../../images/light.png";
+            localStorage.setItem("dark-mode", "true");
+         } else {
+            toggleImg.src = "../../images/dark.png";
+            localStorage.setItem("dark-mode", "false");
+         }
       }
-    });
-  </script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+         const toggleImg = document.querySelector('#darkModeToggle');
+         if (localStorage.getItem("dark-mode") === "true") {
+            document.body.classList.add("dark-mode");
+            toggleImg.src = "../../images/light.png";
+         } else {
+            toggleImg.src = "../../images/dark.png";
+         }
+      });
+   </script>
 </body>
 </html>
 

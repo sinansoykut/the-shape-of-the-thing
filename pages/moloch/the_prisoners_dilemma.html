@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>the prisoner's dilemma</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="icon" href="../../images/favicon.ico" sizes="any">
-  <link rel="shortcut icon" href="../../images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
-  <meta property="og:image" content="../../images/favicon-512x512.png">
+   <meta charset="UTF-8">
+   <title>the prisoner's dilemma</title>
+   <link rel="stylesheet" href="../../styles.css">
+   <link rel="icon" href="../../images/favicon.ico" sizes="any">
+   <link rel="shortcut icon" href="../../images/favicon.ico">
+   <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
+   <meta property="og:image" content="../../images/favicon-512x512.png">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1><a href="moloch.html">moloch</a></h1>
-		<hr>
-        <h2>the prisoner's dilemma</h2>
-      <br>
-    </header>
-    <div class="poem">
-      <p>
-        welcome to your incarceration<br>
-        though it's where you've always been<br>
-        make your consideration<br>
-        collude or defect therein<br>
-        <br>
-        the dilemma that we face<br>
-        is a fairly simple question<br>
-        work together in embrace<br>
-        or betray for a concession<br>
-        <br>
-        this prison has been here<br>
-        for as long as we can tell<br>
-        though it's moved from the frontier<br>
-        into this global hell<br>
-        <br>
-        cooperating with each other<br>
-        would produce us a plenitude<br>
-        if you labour for another<br>
-        you'll dismantle the feud<br>
-        <br>
-        but self-serving acquisition<br>
-        is the order of the day<br>
-        because without ambition<br>
-        you will become the prey<br>
-        <br>
-        and so again the choice is composed<br>
-        we work together or you work opposed<br>
-        <br>
-        so you may give in to your greed<br>
-        making scarcity for all<br>
-        or you may give of yourself<br>
-        and smash the prison walls<br>
-      </p>
-    </div>
-    <footer>
-    <div class="social-icons">
-      <a href="https://www.tiktok.com/@empathycast" target="_blank">
-        <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
-      </a>
-      <a href="https://www.instagram.com/empathycast" target="_blank">
-        <img src="../../images/instagram.png" alt="instagram" class="social-icon">
-      </a>
-      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
-        <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
-      </a>
-      </div>
-      <div class="dark-mode-container">
-        <a href="../../index.html">
-            <img src="../../images/home.png" alt="home" class="home-icon">
-        </a>
-        <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
-      </div>
-    </footer>
-  </div>
-  
-  <script src="../../darkmode.js"></script>
-  <script>
-    function toggleDarkMode() {
-      const body = document.body;
-      const toggleImg = document.querySelector('.toggle-img');
-      body.classList.toggle('dark-mode');
-      
-      if (body.classList.contains('dark-mode')) {
-        toggleImg.src = "../../images/light.png";
-        localStorage.setItem("dark-mode", "true");
-      } else {
-        toggleImg.src = "../../images/dark.png";
-        localStorage.setItem("dark-mode", "false");
-      }
-    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleImg = document.querySelector('#darkModeToggle');
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-        toggleImg.src = "../../images/light.png";
-      } else {
-        toggleImg.src = "../../images/dark.png";
+<body>
+   <div class="container">
+      <header>
+         <h1><a href="moloch.html">moloch</a></h1>
+	      <hr>
+         <h2>the prisoner's dilemma</h2>
+         <br>
+      </header>
+
+      <div class="poem">
+         <p>
+            welcome to your incarceration<br>
+            though it's where you've always been<br>
+            make your consideration<br>
+            collude or defect therein<br>
+            <br>
+            the dilemma that we face<br>
+            is a fairly simple question<br>
+            work together in embrace<br>
+            or betray for a concession<br>
+            <br>
+            this prison has been here<br>
+            for as long as we can tell<br>
+            though it's moved from the frontier<br>
+            into this global hell<br>
+            <br>
+            cooperating with each other<br>
+            would produce us a plenitude<br>
+            if you labour for another<br>
+            you'll dismantle the feud<br>
+            <br>
+            but self-serving acquisition<br>
+            is the order of the day<br>
+            because without ambition<br>
+            you will become the prey<br>
+            <br>
+            and so again the choice is composed<br>
+            we work together or you work opposed<br>
+            <br>
+            so you may give in to your greed<br>
+            making scarcity for all<br>
+            or you may give of yourself<br>
+            and smash the prison walls<br>
+         </p>
+      </div>
+
+      <footer>
+         <div class="social-icons">
+            <a href="https://www.tiktok.com/@empathycast" target="_blank">
+               <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/empathycast" target="_blank">
+               <img src="../../images/instagram.png" alt="instagram" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+               <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
+            </a>
+         </div>
+         <div class="dark-mode-container">
+            <a href="../../index.html">
+               <img src="../../images/home.png" alt="home" class="home-icon">
+            </a>
+            <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+         </div>
+      </footer>
+   </div>
+  
+   <script src="../../darkmode.js"></script>
+   <script>
+      function toggleDarkMode() {
+         const body = document.body;
+         const toggleImg = document.querySelector('.toggle-img');
+         body.classList.toggle('dark-mode');
+      
+         if (body.classList.contains('dark-mode')) {
+            toggleImg.src = "../../images/light.png";
+            localStorage.setItem("dark-mode", "true");
+         } else {
+            toggleImg.src = "../../images/dark.png";
+            localStorage.setItem("dark-mode", "false");
+         }
       }
-    });
-  </script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+         const toggleImg = document.querySelector('#darkModeToggle');
+         if (localStorage.getItem("dark-mode") === "true") {
+            document.body.classList.add("dark-mode");
+            toggleImg.src = "../../images/light.png";
+         } else {
+            toggleImg.src = "../../images/dark.png";
+         }
+      });
+   </script>
 </body>
 </html>
 

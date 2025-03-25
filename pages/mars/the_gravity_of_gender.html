@@ -1,108 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>the gravity of gender</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="icon" href="../../images/favicon.ico" sizes="any">
-  <link rel="shortcut icon" href="../../images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
-  <meta property="og:image" content="../../images/favicon-512x512.png">
+   <meta charset="UTF-8">
+   <title>the gravity of gender</title>
+   <link rel="stylesheet" href="../../styles.css">
+   <link rel="icon" href="../../images/favicon.ico" sizes="any">
+   <link rel="shortcut icon" href="../../images/favicon.ico">
+   <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png">
+   <meta property="og:image" content="../../images/favicon-512x512.png">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1><a href="mars.html">mars</a></h1>
-		<hr>
-        <h2>the gravity of gender</h2>
-      <br>
-    </header>
-    <div class="poem">
-      <p>
-        the gravity of gender<br>
-        how does it get its weight?<br>
-        what is so important here?<br>
-        why does it feel innate?<br>
-        <br>
-        gender is personal and uniquely known<br>
-        a function of self, in a social place<br>
-        the roots of the thing are deeply sown<br>
-        though how it grows is face to face<br>
-        <br>
-        we're normal people, with normal desires<br>
-        to be seen, to be included, and to be esteemed<br>
-        the models we hold up, act as justifiers<br>
-        demonstrating how, masculinity is deemed<br>
-        <br>
-        we are measured on a curve<br>
-        each against another<br>
-        and if it is you will not serve<br>
-        you won't be titled brother<br>
-        <br>
-        and those who fail the measure of man<br>
-        are cast from the fire to the frying pan<br>
-        without even the glow of competitive regard<br>
-        ashamed and alone, out in the yard<br>
-        <br>
-        if you've been snubbed<br>
-        and wish for affirmation<br>
-        you're left to comply<br>
-        and make peace with predation<br>
-        <br>
-        manhood has a type and scope<br>
-        a definition here<br>
-        participation is required<br>
-        or you'll be cast as queer<br>
-      </p>
-    </div>
-    <footer>
-    <div class="social-icons">
-      <a href="https://www.tiktok.com/@empathycast" target="_blank">
-        <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
-      </a>
-      <a href="https://www.instagram.com/empathycast" target="_blank">
-        <img src="../../images/instagram.png" alt="instagram" class="social-icon">
-      </a>
-      <a href="https://www.youtube.com/channel/empathycast" target="_blank">
-        <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
-      </a>
-      </div>
-      <div class="dark-mode-container">
-        <a href="../../index.html">
-            <img src="../../images/home.png" alt="home" class="home-icon">
-        </a>
-        <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
-      </div>
-    </footer>
-  </div>
-  
-  <script src="../../darkmode.js"></script>
-  <script>
-    function toggleDarkMode() {
-      const body = document.body;
-      const toggleImg = document.querySelector('.toggle-img');
-      body.classList.toggle('dark-mode');
-      
-      if (body.classList.contains('dark-mode')) {
-        toggleImg.src = "../../images/light.png";
-        localStorage.setItem("dark-mode", "true");
-      } else {
-        toggleImg.src = "../../images/dark.png";
-        localStorage.setItem("dark-mode", "false");
-      }
-    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleImg = document.querySelector('#darkModeToggle');
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-        toggleImg.src = "../../images/light.png";
-      } else {
-        toggleImg.src = "../../images/dark.png";
+<body>
+   <div class="container">
+      <header>
+         <h1><a href="mars.html">mars</a></h1>
+	      <hr>
+         <h2>the gravity of gender</h2>
+         <br>
+      </header>
+
+      <div class="poem">
+         <p>
+            the gravity of gender<br>
+            how does it get its weight?<br>
+            what is so important here?<br>
+            why does it feel innate?<br>
+            <br>
+            gender is personal and uniquely known<br>
+            a function of self, in a social place<br>
+            the roots of the thing are deeply sown<br>
+            though how it grows is face to face<br>
+            <br>
+            we're normal people, with normal desires<br>
+            to be seen, to be included, and to be esteemed<br>
+            the models we hold up, act as justifiers<br>
+            demonstrating how, masculinity is deemed<br>
+            <br>
+            we are measured on a curve<br>
+            each against another<br>
+            and if it is you will not serve<br>
+            you won't be titled brother<br>
+            <br>
+            and those who fail the measure of man<br>
+            are cast from the fire to the frying pan<br>
+            without even the glow of competitive regard<br>
+            ashamed and alone, out in the yard<br>
+            <br>
+            if you've been snubbed<br>
+            and wish for affirmation<br>
+            you're left to comply<br>
+            and make peace with predation<br>
+            <br>
+            manhood has a type and scope<br>
+            a definition here<br>
+            participation is required<br>
+            or you'll be cast as queer<br>
+         </p>
+      </div>
+
+      <footer>
+         <div class="social-icons">
+            <a href="https://www.tiktok.com/@empathycast" target="_blank">
+               <img src="../../images/tiktok.png" alt="tiktok" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/empathycast" target="_blank">
+               <img src="../../images/instagram.png" alt="instagram" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/channel/empathycast" target="_blank">
+               <img src="../../images/youtube.png" alt="YouTube" class="social-icon">
+            </a>
+         </div>
+         <div class="dark-mode-container">
+            <a href="../../index.html">
+               <img src="../../images/home.png" alt="home" class="home-icon">
+            </a>
+            <img src="../../images/dark.png" alt="Toggle Dark Mode" class="toggle-img" onclick="toggleDarkMode()" id="darkModeToggle">
+         </div>
+      </footer>
+   </div>
+  
+   <script src="../../darkmode.js"></script>
+   <script>
+      function toggleDarkMode() {
+         const body = document.body;
+         const toggleImg = document.querySelector('.toggle-img');
+         body.classList.toggle('dark-mode');
+      
+         if (body.classList.contains('dark-mode')) {
+            toggleImg.src = "../../images/light.png";
+            localStorage.setItem("dark-mode", "true");
+         } else {
+            toggleImg.src = "../../images/dark.png";
+            localStorage.setItem("dark-mode", "false");
+         }
       }
-    });
-  </script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+         const toggleImg = document.querySelector('#darkModeToggle');
+         if (localStorage.getItem("dark-mode") === "true") {
+            document.body.classList.add("dark-mode");
+            toggleImg.src = "../../images/light.png";
+         } else {
+            toggleImg.src = "../../images/dark.png";
+         }
+      });
+   </script>
 </body>
 </html>
 
