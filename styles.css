@@ -154,13 +154,13 @@ footer {
    }
 
    .content-wrap {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       margin: auto;
    }
 
    .side-image {
-      display: none;
+      height: 350px;
    }
 
    .content {
